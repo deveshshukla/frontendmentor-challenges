@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Qr Code Component Challenge](https://your-live-site-url.com)
+- Live Site URL: [Qr Code Component Challenge](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-2%20Qr%20Code%20Component/)
 
 ## My process
 
