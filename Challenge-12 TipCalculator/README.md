@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Product Preview Card Component Challenge](https://your-live-site-url.com)
+- Live Site URL: [Product Preview Card Component Challenge](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-12%20TipCalculator/)
 
 ## My process
 
