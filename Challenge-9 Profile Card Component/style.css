@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: -40rem -50rem, 40rem 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--Dark-cyan);
+}
+
+/* Card */
+.card {
+    background-color: #FFFFFF;
+    width: 19rem;
+    height: 20rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 10px #00000015;
+    overflow: hidden;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/bg-pattern-card.svg);
+    height: 40%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.profileImg {
+    width: 5rem;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    position: relative;
+    top: 4rem;
+    transition: .5s;
+}
+.profileImg:hover {
+    cursor: pointer;
+    border-radius: 25%;
+    border-color: var(--Dark-cyan);
+}
+
+.bottom {
+    margin-top: 3.5rem;
+}
+.name {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+.name span {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    margin-left: .2rem;
+}
+.city {
+    text-align: center;
+    color: var(--Dark-gray);
+    font-weight: 400;
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
+hr{
+    margin-top: 1.5rem;
+    border: 0;
+    clear:both;
+    display:block;               
+    background-color: var(--Dark-gray);
+    height: .5px;
+    opacity: .5;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 2.5rem;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+    margin-top: 1rem;
+}
+.stats span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    font-size: .6em;
+    margin-top: .3rem;
+}
+
+/* Footer */
+.attribution {
+    text-align: center;
+    font-weight: 400;
+    color: var(--Very-dark-desaturated-blue);
+    font-size: .8em;
+    margin-top: 3rem;
+}

@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --Strong-cyan: hsl(172, 67%, 45%);
+
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    background-color: var(--Light-grayish-cyan);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgLogo {
+    width: 5rem;
+    margin: 2rem 0 3rem 0;
+}
+
+/* ---------------- starting ---------------- */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--White);
+    box-shadow: 0 1rem 3rem #00000050;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+/* ---------------- sec-1 ---------------- */
+.sec-1 {
+    margin-right: 1rem;
+}
+
+
+.leftSec {
+    margin-bottom: 2rem;
+}
+
+.txtHeading {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: .9rem;
+    color: var(--Dark-grayish-cyan);
+    margin-bottom: .5rem;
+}
+
+/* 1 & 3 */
+.leftSec>.inputSec {
+    background-color: var(--Very-light-grayish-cyan);
+    width: auto;
+    height: 2.5rem;
+    padding: .8rem;
+    border-radius: .3rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputSec:hover {
+    border: 2px solid var(--Strong-cyan);
+}
+
+.inputField {
+    width: auto;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--Grayish-cyan);
+    margin-left: auto;
+
+    border: none;
+    text-align: end;
+    background-color: var(--Very-light-grayish-cyan);
+}
+
+.inputField:focus {
+    outline: none;
+}
+
+.inputField::placeholder {
+    color: var(--Grayish-cyan);
+}
+
+
+/* 2 */
+.leftSec>.tipPercField {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.tip {
+    width: auto;
+    background-color: var(--Very-dark-cyan);
+    text-align: center;
+    color: var(--White);
+    font-family: inherit;
+    font-weight: 700;
+    padding: .3rem 2rem;
+    border-radius: .2rem;
+}
+
+.tip:hover {
+    cursor: pointer;
+}
+
+.customTip {
+    width: 6rem;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--Grayish-cyan);
+
+    border: none;
+    border-radius: .2rem;
+    text-align: center;
+    background-color: var(--Very-light-grayish-cyan);
+}
+
+.customTip:hover {
+    border: 2px solid var(--Strong-cyan);
+}
+
+.customTip:focus {
+    outline: none;
+}
+
+.customTip::placeholder {
+    color: var(--Grayish-cyan);
+}
+
+.btnCalculate {
+    margin: 1rem 0;
+}
+
+
+
+/* ---------------- sec-2 ---------------- */
+.sec-2 {
+    width: auto;
+    height: fit-content;
+    margin-left: 1rem;
+    background-color: var(--Very-dark-cyan);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.subSecRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    justify-content: space-between;
+
+    font-family: inherit;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.subSecRight>p {
+    color: var(--White);
+    font-size: .7rem;
+}
+
+.subSecRight>p>span {
+    color: var(--Dark-grayish-cyan);
+    font-size: .65rem;
+}
+
+.txtBillAmt {
+    margin-left: auto;
+
+    color: var(--Strong-cyan);
+    font-size: 2rem;
+}
+
+/* Button Reset */
+.btnReset {
+    margin: 4rem 0 1rem;
+}
+
+
+/* Footer */
+.attribution {
+    margin: 4rem 0 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    font-weight: 400;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 750px) {
+    main {
+        height: auto;
+    }
+
+    .imgLogo {
+        margin: 1rem 0 3rem 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sec-1 {
+        margin-right: 0;
+    }
+
+    .sec-2 {
+        margin-left: 0;
+    }
+}
+
+/*Global Btn Function*/
+
+.btn {
+    width: auto;
+    font-family: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--Very-dark-cyan);
+    background-color: var(--Strong-cyan);
+    text-align: center;
+    border-radius: .3rem;
+    padding: .3rem;
+
+    transition: all .2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--Light-grayish-cyan);
+    box-shadow: .4rem .5rem 0rem #00000050;
+}
+
+.btn:active {
+    transition: all .2s;
+    transform: translateY(.2rem);
+    box-shadow: .2rem .3rem 0rem #00000050;
+}

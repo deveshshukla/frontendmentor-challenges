@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.125rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden; /* hide bottom scrollbar */
+}
+
+picture {
+    min-width: fit-content;
+    max-width: fit-content;
+    width: 100%;
+}
+
+/* Section-1 */
+.section-1 {
+    text-align: center;
+    margin-top: -20rem;
+    padding-bottom: 2rem;
+}
+.logo {
+    width: 6rem;
+    margin-top: 7rem;
+}
+.heading {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+    margin-top: 3rem;
+}
+.headingDesc {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--Grayish-Blue);
+    padding: 0 18rem;
+    margin: 1rem 0 3rem 0;
+}
+.btn {
+    font-size: .8rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    padding: .8rem 1.8rem;
+    transition: .5s ease-in;
+}
+.btn:hover {
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: .5s;
+}
+.btnOne {
+    background-color: var(--Strong-Cyan);
+    box-shadow: 0 0 1rem .5rem #26baa460;
+    margin-right: .3rem;
+}
+.btnTwo {
+    background-color: var(--Light-Blue);
+    box-shadow: 0 0 1rem .5rem #6173ff60;
+    margin-left: .3rem;
+}
+
+/* Section-2 */
+.section-2 {
+    margin: 4rem 0 2rem 0;
+}
+.sec2Content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+.monitorImg {
+    width: 1000px;
+    margin-left: -2rem;
+}
+.sec2Txt {
+    margin: auto 0 auto 5rem;
+}
+.sec2TxtHeading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+}
+.sec2TxtSub {
+    font-size: .8rem;
+    line-height: 1.5rem;
+    color: var(--Grayish-Blue);
+    margin: .5rem 10rem 2rem 0;
+}
+
+/* Section-3 */
+.section-3 {
+    margin: 4rem auto 0 auto;
+    text-align: center;
+}
+.tabImg {
+    width: auto;
+    margin: 2rem auto 0 auto;
+}
+
+/* Section-4 */
+.section-4 .heading {
+    margin-top: 2rem;
+}
+.sec4Content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4rem auto;
+    width: 90%;
+}
+.sub {
+    text-align: center;
+    width: 30%;
+}
+.sec4Img {
+    width: 40px;
+    margin-bottom: 1.5rem;
+}
+.sec4TxtHeading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+}
+.sec4TxtSub {
+    font-size: .8rem;
+    line-height: 1.5rem;
+    color: var(--Grayish-Blue);
+    margin: 1rem 1rem;
+}
+
+/* Section-5 */
+.section-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem auto;
+}
+.brandImg {
+    margin: auto 2rem;
+}
+
+/* Section-6 */
+.section-6 {
+    text-align: center;
+    margin: 5rem auto 0;
+    padding-bottom: 2rem;
+}
+
+/* --------- Footer --------- */
+footer {
+    background-color: #eef1f6;
+    margin-top: 5rem;
+    padding: 2rem 0 .5rem;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+.footerLogo {
+    width: 20%;
+    margin: auto auto;
+}
+.footLogo {
+    width: 50px;
+}
+.footLogo:hover {
+    cursor: pointer;
+}
+.txtLinks {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: auto 0;
+}
+.txtLinksGroup {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 5rem;
+}
+.txt {
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 400;
+    font-size: .9rem;
+    margin: .5rem 0;
+}
+.txt:hover {
+    color: var(--Strong-Cyan);
+}
+.socialLinks {
+    width: 20%;
+    margin: auto auto;
+}
+.imgLink {
+    margin: auto .5rem;
+}
+.imgLink:hover {
+    cursor: pointer;
+    filter: invert(72%) sepia(17%) saturate(1854%) 
+    hue-rotate(119deg) brightness(85%) contrast(80%);
+}
+
+.attribution {
+    padding-top: 2rem;
+}
+.attribution p {
+    font-size: .8rem;
+    font-weight: 900;
+    color: var(--Dark-Grayish-Blue);
+}
+.attribution p a {
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 900;
+    color: var(--Light-Blue);
+}
+
+
+
+
+
+/* Desktop Query */
+@media (max-width: 910px) {
+    .heading {
+        padding: 0 2rem;
+    }
+    .headingDesc {
+        padding: 0 2rem;
+    }
+}
+
+/* Mobile Query */
+@media (max-width: 414px) {
+    /* Section-1 */
+    .heading {
+        font-size: 1.5rem;
+    }
+    .headingDesc {
+        font-size: .8rem;
+        margin-top: 1.5rem;
+    }
+    .btn {
+        margin: 0;
+        padding: .8rem 4rem;
+    }
+    .btnTwo {
+        margin-top: 1rem;
+    }
+
+    /* Section-2 */
+    .sec2Content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    .monitorImg {
+        width: auto;
+        margin-left: 0;
+        padding: 1rem;
+    }
+    .sec2Txt {
+        margin: 2rem auto;
+        text-align: center;
+    }
+    .sec2TxtSub {
+        color: var(--Grayish-Blue);
+        margin: 1rem 2rem 2rem;
+    }
+
+    /* Section-3 */
+    .section-3 {
+        margin: 3rem auto 0 auto;
+    }
+    .tabImg {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    /* Section-4 */
+    .section-4 .heading {
+        margin-top: 5rem;
+    }
+    .sec4Content {
+        flex-direction: column;
+    }
+    .sub {
+        text-align: center;
+        width: auto;
+    }
+    .sec4TxtSub {
+        margin: 1rem 1rem 3rem;
+    }
+
+    /* Section-5 */
+    .section-5 {
+        flex-direction: column;
+        margin: 1rem auto;
+    }
+    .brandImg {
+        margin: 2rem auto;
+    }
+
+    /* --------- Footer --------- */
+    .footer {
+        flex-direction: column;
+    }
+    .footerLogo {
+        width: auto;
+        margin: 0 auto;
+    }
+    .txtLinks {
+        flex-direction: column;
+        width: auto;
+        margin: 1.5rem auto;
+    }
+    .txtLinksGroup {
+        flex-direction: column;
+        text-align: center;
+        margin-right: 0;
+    }
+    .socialLinks {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin: 0 auto;
+    }
+    .imgLink {
+        margin: auto 1rem;
+    }
+}

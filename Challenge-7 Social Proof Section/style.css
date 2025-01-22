@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+/*
+    font-family: 'League Spartan', sans-serif;
+    Weights: 400, 500, 700
+*/
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    margin: 5rem 7rem 5rem 7rem; /*Top, Left, Bottom, Right*/
+    font-family: 'League Spartan', sans-serif;
+    font-size: 0.938rem;
+}
+
+/* Header */
+.head {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+/* Header - Left */
+.txtContainer {
+    width: 50%;
+}
+.txtHeading {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    text-align: left;
+    padding-right: 10rem;
+    letter-spacing: -2px;
+}
+.txtDesc {
+    margin-top: 1.5rem;
+    display: inline-block;
+    font-weight: 500;
+    color: var(--Dark-Grayish-Magenta);
+    text-align: left;
+    font-size: .8rem;
+    padding-right: 13rem;
+    line-height: 1.2rem;
+}
+/* Header - Right */
+.ratingContainer {
+    width: 50%;
+    padding-right: 10rem;
+    vertical-align: middle;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: .5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin: 1rem;
+    transition: .5s ease-in-out;
+}
+.box:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px #00000080;
+    transition: .5s ease-in-out;
+}
+.box-2 {
+    position: relative;
+    left: 2.5rem;
+}
+.box-3 {
+    position: relative;
+    left: 5rem;
+}
+.imgStar {
+    display: flex;
+    flex-direction: row;
+}
+.imgRating {
+    width: .8rem;
+    margin-right: .5rem;
+}
+.txtRating {
+    font-weight: 700;
+    font-size: .8rem;
+    color: var(--Very-Dark-Magenta);
+    margin-left: 1rem;
+}
+
+/* Card */
+.cardContainer {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    background-color: var(--Very-Dark-Magenta);
+    padding: 2rem;
+    border-radius: .5rem;
+    color: var(--White);
+    font-weight: 500;
+    transition: all 0.5s ease-out;
+}
+.card:hover {
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    box-shadow: 0 0 15px 10px #50205080;
+}
+
+.card-1 {
+    margin-right: 1.5rem;
+}
+.card-2 {
+    position: relative;
+    top: 1rem;
+    margin-right: 1.5rem;
+}
+.card-3 {
+    position: relative;
+    top: 2rem;
+}
+/* Card - Header */
+.cardHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.avatar {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 2.2rem;
+}
+.userName {
+    margin-left: 1.5rem;
+}
+.userName span {
+    display: block;
+    color: var(--Soft-Pink);
+    margin-top: .2rem;
+    font-weight: 400;
+}
+/* Card - Footer */
+.cardDesc {
+    margin-top: 1.5rem;
+}
+
+/* Footer */
+.attribution {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+    color: var(--Very-Dark-Magenta);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+/* ---------------------------------------------------------- */
+/* Media Query - Min Desktop */
+@media only screen and (max-width: 1205px) {
+    main {
+        margin: 5rem 4rem 5rem 4rem; /*Top, Left, Bottom, Right*/
+    }
+    .box {
+        flex-direction: column;
+    }
+    .txtRating {
+        margin-top: .5rem;
+    }
+}
+
+/* Media Query - Tablet */
+@media only screen and (max-width: 912px) {
+    main {
+        margin: 5rem 3rem 5rem 3rem; /*Top, Left, Bottom, Right*/
+    }
+    .box-2, .box-3 {
+        left: 0;
+    }
+    .imgStar {
+        justify-content: center;
+    }
+    .txtRating {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Media Query - Mobile */
+@media only screen and (max-width: 837px) {
+    main {
+        margin: 5rem 5rem 5rem 5rem; /*Top, Left, Bottom, Right*/
+    }
+    .head {
+        flex-direction: column;
+    }
+    .txtContainer {
+        width: 100%;
+    }
+    .txtHeading {
+        text-align: center;
+        padding: 0 2rem 0 2rem;
+    }
+    .txtDesc {
+        text-align: center;
+        padding: 0 1rem 0 1rem;
+    }
+    .ratingContainer {
+        width: 100%;
+        padding: 0 2rem 0 2rem;
+        margin-top: 2rem;
+    }
+    .cardContainer {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .card-1, .card-2, .card-3 {
+        margin: 0 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 503px) {
+    main {
+        margin: 5rem 3rem 5rem 3rem; /*Top, Left, Bottom, Right*/
+    }
+}
+
+@media only screen and (max-width: 439px) {
+    main {
+        margin: 5rem 1rem 5rem 1rem; /*Top, Left, Bottom, Right*/
+    }
+}
