@@ -1,0 +1,274 @@
+/* For tablet devices */
+@media only screen and (max-width: 991px) and (min-width: 711px) {
+    main > .secHeader {
+        background-image: url(./images/bg-hero-mobile.svg);
+    }
+    .secHeader > .headerContent {
+        margin-top: 4rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .headerContent > .left {
+        width: 70%;
+        padding-right: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left > .txtHeading {
+        width: 100%;
+    }
+    .left > .txtDesc {
+        width: 100%;
+    }
+
+    .headerContent > .right {
+        width: 100%;
+        padding: 2rem 0 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*----------Footer Sec Starts----------*/
+    #footerContainer {
+        padding: 8rem 2rem 2rem;
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 710px) and (min-width: 431px) {
+    main > .secHeader {
+        background-image: url(./images/bg-hero-mobile.svg);
+    }
+
+    .secHeader > .nav {
+        padding: 2rem 1rem;
+    }
+
+    .secHeader > .headerContent {
+        margin-top: 4rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .headerContent > .left {
+        width: 100%;
+        padding-right: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left > .txtHeading {
+        width: 100%;
+    }
+    .left > .txtDesc {
+        width: 100%;
+    }
+
+    .headerContent > .right {
+        width: 100%;
+        padding: 2rem 0 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*----------Body Sec Starts----------*/
+    .main > .secBody > .card {
+        flex-direction: column-reverse;
+
+        .leftContent {
+            text-align: center;
+            padding: 0 1rem;
+
+            h1 {
+                margin-top: 3rem;
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .main > .secBody > .card:nth-child(2) {
+        flex-direction: column;
+
+        .rightContent {
+            text-align: center;
+            padding: 0 1rem;
+
+            h1 {
+                margin-top: 3rem;
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .main > .secBody > .bottomCard {
+        width: 80%;
+
+        h1 {
+            font-size: 1rem;
+        }
+        button {
+            padding: 1rem 3rem;
+        }
+    }
+
+    /*----------Footer Sec Starts----------*/
+    #footerContainer {
+        padding: 8rem 1rem 2rem;
+
+        .logo { width: 8rem; }
+
+        .txtContent {
+            flex-direction: column;
+
+            .secOne {
+                width: 100%;
+            }
+
+            .secTwo {
+                width: 100%;
+                flex-direction: column;
+                margin-top: 1rem;
+            }
+
+            .secThree {
+                width: 100%;
+                margin-top: 2rem;
+                justify-content: center;
+            }
+        }
+
+        .copyrightContent {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+/* For small-mobile devices */
+@media only screen and (max-width: 430px) {
+    .secHeader > .nav {
+        padding: 2rem .5rem;
+        flex-direction: column;
+    }
+    .nav > img {
+        margin-bottom: 2rem;
+    }
+
+    .secHeader > .headerContent {
+        margin-top: 4rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .headerContent > .left {
+        width: 100%;
+        padding-right: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left > .txtHeading {
+        width: 100%;
+    }
+    .left > .txtDesc {
+        width: 100%;
+    }
+
+    .headerContent > .right {
+        width: 100%;
+        padding: 2rem 0 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*----------Body Sec Starts----------*/
+    .main > .secBody > .card {
+        flex-direction: column-reverse;
+
+        .leftContent {
+            text-align: center;
+            padding: 0 0;
+
+            h1 {
+                margin-top: 3rem;
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .main > .secBody > .card:nth-child(2) {
+        flex-direction: column;
+
+        .rightContent {
+            text-align: center;
+            padding: 0 0;
+
+            h1 {
+                margin-top: 3rem;
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .main > .secBody > .bottomCard {
+        width: 80%;
+
+        h1 {
+            font-size: 1rem;
+        }
+        button {
+            padding: 1rem 2rem;
+        }
+    }
+
+    /*----------Footer Sec Starts----------*/
+    #footerContainer {
+        padding: 8rem 1rem 2rem;
+
+        .logo { width: 8rem; }
+
+        .txtContent {
+            flex-direction: column;
+
+            .secOne {
+                width: 100%;
+            }
+
+            .secTwo {
+                width: 100%;
+                flex-direction: column;
+                margin-top: 1rem;
+            }
+
+            .secThree {
+                width: 100%;
+                margin-top: 2rem;
+                justify-content: center;
+            }
+        }
+
+        .copyrightContent {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
