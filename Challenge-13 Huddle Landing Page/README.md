@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Huddle Website Landing Page Challenge](https://your-live-site-url.com)
+- Live Site URL: [Huddle Website Landing Page Challenge](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-13%20Huddle%20Landing%20Page)
 
 ## My process
 
