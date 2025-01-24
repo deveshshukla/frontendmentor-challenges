@@ -20,6 +20,7 @@ github landing page: [Main Repository](https://deveshshukla.github.io/frontendme
 | 10  | [Chat App CSS Illustration](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-10%20Chat%20App%20CSS%20Illustration/)                                       | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-10%20Chat%20App%20CSS%20Illustration)            |
 | 11  | [Clipboard Master](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-11%20Clipboard%20Master/)                                                             | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-11%20Clipboard%20Master)                         |
 | 12  | [TipCalculator](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-12%20TipCalculator/)                                                                     | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-12%20TipCalculator)                              |
+| 13  | [Huddle Landing Page](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-13%20Huddle%20Landing%20Page)                                                      | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-13%20Huddle%20Landing%20Page)                    |
 
 ## Author
 
