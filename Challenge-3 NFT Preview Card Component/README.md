@@ -1,5 +1,7 @@
 # Frontend Mentor - Challenge-3 NFT Preview Card Component Solution 
 
+- Live Site URL: [NFT Preview Card Component](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-3%20NFT%20Preview%20Card%20Component/src/index.html)
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -22,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Product Preview Card Component Challenge](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-3%20NFT%20Preview%20Card%20Component/)
+- Live Site URL: [NFT Preview Card Component](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-3%20NFT%20Preview%20Card%20Component/src/index.html)
 
 ## My process
 
