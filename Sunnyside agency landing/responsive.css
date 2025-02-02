@@ -1,0 +1,176 @@
+@media screen and (max-width: 710px) {
+  /* header start */
+  .header {
+    background-image: url(./images/mobile/image-header.jpg);
+  }
+
+  .navLinkContainer {
+    visibility: hidden;
+  }
+
+  .nav {
+    position: relative;
+  }
+  .menuCard {
+    z-index: 10;
+    position: absolute;
+    visibility: collapse;
+    width: 85%;
+    margin-top: 1rem;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    clip-path: polygon(
+      0 100%,
+      100% 100%,
+      100% 24%,
+      100% 24%,
+      100% 0,
+      92% 9%,
+      0 9%
+    );
+    padding: 3rem 3rem 1rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      li,
+      a {
+        margin-top: 1.5rem;
+        color: var(--Dark-grayish-blue);
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+    }
+
+    button {
+      margin: 2rem 0 1.5rem;
+      background-color: var(--Yellow);
+    }
+  }
+
+  .hamMenuIcon {
+    visibility: visible;
+    position: absolute;
+    right: 10%;
+  }
+
+  .txtHero {
+    margin-top: 4rem;
+    padding: 0 1rem;
+  }
+  .iconArrowDown {
+    width: 2.5rem;
+    margin-top: 5rem;
+  }
+  /* header end */
+
+  /* Main Start - About Sec */
+  .boxContainer {
+    height: fit-content;
+    flex-direction: column-reverse;
+  }
+  .boxContainer2 {
+    height: fit-content;
+    flex-direction: column;
+  }
+  .txtSec {
+    width: 100%;
+    padding-left: 0;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+  .txtSec2 {
+    width: 100%;
+    padding-left: 0;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+  .secHeadingTxt {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--desaturated-blue);
+  }
+  .secDescTxt {
+    width: 100%;
+    text-align: center;
+  }
+
+  .imgSec {
+    width: 100%;
+  }
+
+  /* Services Sec */
+  .serviceBoxContainer {
+    height: fit-content;
+    flex-direction: column;
+  }
+  .serviceImgSec1 {
+    width: 100%;
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+  }
+  .serviceImgSec2 {
+    width: 100%;
+    background-image: url(./images/desktop/image-photography.jpg);
+  }
+  .serviceTextContainer {
+    margin-bottom: 3rem;
+
+    p {
+      width: 90%;
+    }
+  }
+
+  /* Testimonial Sec */
+  .secTestimonial > h2 {
+    margin-top: 4rem;
+    padding: 0 1rem;
+  }
+  .testimonialContainer {
+    flex-direction: column;
+    margin: 4rem 0 2rem;
+  }
+  .testimonial {
+    margin-bottom: 4rem;
+  }
+  .userTestimony {
+    margin-top: 2rem;
+  }
+  .userName {
+    margin-top: 1.5rem;
+  }
+
+  /* Project Sec */
+  .projectsContainer {
+    height: 15rem;
+  }
+  .project {
+    width: 50%;
+  }
+  /* Main End */
+
+  /* Footer Start */
+  footer {
+    margin-top: 15rem;
+    padding: 4rem 0 1rem;
+  }
+  .attribution {
+    text-align: center;
+    width: 60%;
+    margin: 3rem auto;
+    line-height: 2rem;
+  }
+}
