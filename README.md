@@ -22,6 +22,8 @@ github landing page: [Main Repository](https://deveshshukla.github.io/frontendme
 | 12  | [TipCalculator](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-12%20TipCalculator/)                                                                     | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-12%20TipCalculator)                              |
 | 13  | [Huddle Landing Page](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-13%20Huddle%20Landing%20Page)                                                      | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-13%20Huddle%20Landing%20Page)                    |
 | 14  | [Sunnyside Landing Page](https://deveshshukla.github.io/frontendmentor-challenges/Sunnyside%20agency%20landing/)                                                            | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Sunnyside%20agency%20landing)                              |
+| 15  | [Browser Extensions Manager](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-15-browser-extensions-manager/)                                             | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-15-browser-extensions-manager)                   |
+
 
 ## Author
 
