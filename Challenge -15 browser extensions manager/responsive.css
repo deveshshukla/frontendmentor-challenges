@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .filterSec {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .cardsContainer {
+        grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    }
+}
