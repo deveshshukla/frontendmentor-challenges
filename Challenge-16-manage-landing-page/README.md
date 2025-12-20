@@ -5,12 +5,23 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 ## Table of contents
 
 - [Links](#links)
+- [My process](#my-process)
 - [Author](#author)
 
 ## Links
 
-- Solution URL: [Github Repo](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-16-manage-landing-page)
+- Live Site URL: [Live site](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-16-manage-landing-page/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
 ## Author
 
