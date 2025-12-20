@@ -26,7 +26,7 @@ Frontend Mentor challenges help to improve coding skills by building realistic p
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-15-browser-extensions-manager/)
 
 ## My process
 
