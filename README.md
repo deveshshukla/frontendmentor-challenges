@@ -24,13 +24,14 @@ github landing page: [Main Repository](https://deveshshukla.github.io/frontendme
 | 14  | [Sunnyside Landing Page](https://deveshshukla.github.io/frontendmentor-challenges/Sunnyside%20agency%20landing/)                                                            | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Sunnyside%20agency%20landing)                              |
 | 15  | [Browser Extensions Manager](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-15-browser-extensions-manager/)                                             | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-15-browser-extensions-manager)                   |
 | 16  | [Manage Landing Pade](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-16-manage-landing-page/)                                                           | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-16-manage-landing-page)                          |
+| 17  | [Advice Generator Web App](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-17-advice-generator-app/)                                                     | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-17-advice-generator-app)                         |
 
 
 ## Author
 
 👤 **Devesh Shukla**
 
-- Portfolio: [@DeveshShukla](#)
+- Portfolio: [@DeveshShukla](https://deveshshuklaportfolio.netlify.app/)
 - Github: [@DeveshShukla](https://github.com/deveshshukla)
 - Linkedin: [@DeveshShukla](https://www.linkedin.com/in/devesh-kumar-shukla/)
 - Frontend Mentor: [@DeveshShukla](https://www.frontendmentor.io/profile/deveshshukla/)
