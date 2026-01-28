@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Advice generator app</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: linear-gradient(to bottom, hsl(218, 23%, 16%), hsl(218, 23%, 16%));
+      background-color: hsl(218, 23%, 16%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: hsl(217, 19%, 24%);
+      border-radius: 15px;
+      padding: 40px;
+      max-width: 540px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      position: relative;
+    }
+
+    .advice-id {
+      color: hsl(150, 100%, 66%);
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .divider-desktop {
+      display: none;
+    }
+
+    .divider-mobile {
+      display: block;
+      margin: 20px 0;
+    }
+
+    .divider-desktop img,
+    .divider-mobile img {
+      width: 100%;
+      height: auto;
+    }
+
+    .advice-text {
+      color: hsl(193, 38%, 86%);
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.6;
+      margin: 20px 0;
+      letter-spacing: 0.5px;
+    }
+
+    .divider-container {
+      margin: 30px 0;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .dice-button {
+      background-color: hsl(150, 100%, 66%);
+      border: none;
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(177, 229, 166, 0.3);
+      position: relative;
+      margin-top: -4rem;
+    }
+
+    .dice-button:hover {
+      box-shadow: 0 10px 40px rgba(177, 229, 166, 0.6);
+    }
+
+    .dice-button:active {
+      transform: scale(0.95);
+    }
+
+    .dice-button svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .dice-button img {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 640px) {
+      .container {
+        padding: 32px 24px;
+        border-radius: 10px;
+      }
+
+      .advice-text {
+        font-size: 24px;
+        line-height: 1.5;
+        margin: 16px 0;
+      }
+
+      .divider-mobile {
+        display: block;
+      }
+
+      .divider-desktop {
+        display: none;
+      }
+
+      .advice-id {
+        font-size: 11px;
+        margin-bottom: 16px;
+      }
+
+      .divider-container {
+        margin: 24px 0;
+      }
+
+      .button-container {
+        margin-top: 24px;
+      }
+
+      .dice-button {
+        width: 56px;
+        height: 56px;
+      }
+
+      .dice-button img {
+        width: 21px;
+        height: 21px;
+      }
+    }
+
+    /* Desktop styles */
+    @media (min-width: 641px) {
+      .divider-desktop {
+        display: block;
+      }
+
+      .divider-mobile {
+        display: none;
+      }
+
+      .container {
+        padding: 48px;
+      }
+
+      .advice-text {
+        font-size: 28px;
+        margin: 24px 0;
+      }
+
+      .divider-container {
+        margin: 32px 0;
+      }
+
+      .button-container {
+        margin-top: 32px;
+      }
+
+      .dice-button:hover {
+        background-color: #a1e4d2;
+      }
+
+      .dice-button:hover svg {
+        filter: brightness(0.85);
+      }
+    }
+
+    .attribution {
+      color: hsl(193, 38%, 86%);
+      font-size: 12px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .attribution a {
+      color: hsl(150, 100%, 66%);
+      text-decoration: none;
+    }
+
+    .attribution a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="advice-id">
+      Advice #<span id="advice-number">117</span>
+    </div>
+
+    <p class="advice-text" id="advice-text">
+      "It is easy to sit up and take notice, what's difficult is getting up and taking action."
+    </p>
+
+    <div class="divider-container">
+      <div class="divider-desktop">
+        <img src="./images/pattern-divider-desktop.svg" alt="divider">
+      </div>
+      <div class="divider-mobile">
+        <img src="./images/pattern-divider-mobile.svg" alt="divider">
+      </div>
+    </div>
+  </div>
+  <div class="button-container">
+    <button class="dice-button" id="dice-btn" aria-label="Generate new advice">
+      <img src="./images/icon-dice.svg" alt="dice icon">
+    </button>
+  </div>
+
+  <div class="attribution">
+    Challenge by Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/deveshshukla" target="_blank">Devesh Shukla</a>.
+  </div>
+</body>
+</html>
