@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/18-REST-countries-api-webApp)
+- Live Site URL: [Live site URL](https://deveshshukla.github.io/frontendmentor-challenges/18-REST-countries-api-webApp/index.html)
 
 ## My process
 
