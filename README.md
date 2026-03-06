@@ -25,6 +25,7 @@ github landing page: [Main Repository](https://deveshshukla.github.io/frontendme
 | 15  | [Browser Extensions Manager](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-15-browser-extensions-manager/)                                             | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-15-browser-extensions-manager)                   |
 | 16  | [Manage Landing Pade](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-16-manage-landing-page/)                                                           | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-16-manage-landing-page)                          |
 | 17  | [Advice Generator Web App](https://deveshshukla.github.io/frontendmentor-challenges/Challenge-17-advice-generator-app/)                                                     | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/Challenge-17-advice-generator-app)                         |
+| 18  | [REST Countries API Web App](https://deveshshukla.github.io/frontendmentor-challenges/18-REST-countries-api-webApp/index.html)                                              | [Link to GitHub repo](https://github.com/deveshshukla/frontendmentor-challenges/tree/main/18-REST-countries-api-webApp)                              |
 
 
 ## Author
