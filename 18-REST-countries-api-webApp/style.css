@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* color definitions */
+:root {
+    --Dark-Blue: hsl(209, 23%, 22%);
+    --Very-Dark-Blue: hsl(207, 26%, 17%);
+    --Very-Dark-Blue-text: hsl(200, 15%, 8%);
+
+    --Dark-Gray: hsl(0, 0%, 52%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Default Dark Mode */
+    --bgColor: var(--Very-Dark-Blue);
+    --lightDark: var(--Dark-Blue);
+    --textColor: var(--White);
+    --borderColor: var(--Dark-Gray);
+
+    /* Search Icon */
+    --searchIco: url('./asset/ico-search-white.png');
+}
+
+/* Light Mode */
+body[data-theme='light'] {
+    --bgColor: var(--White);
+    --lightDark: var(--Very-Light-Gray);
+    --textColor: var(--Very-Dark-Blue-text);
+    --borderColor: var(--Dark-Blue);
+
+    /* Search Icon */
+    --searchIco: url('./asset/ico-search-black.png');
+}
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    background-color: var(--lightDark);
+    box-shadow: inset 0 -5px 10px rgba(0,0,0,0.07);
+}
+
+.txtTitle {
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--textColor);
+}
+
+.theme-toggle {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--textColor);
+    cursor: pointer;
+    border: 1px solid var(--borderColor);
+    border-radius: .5rem;
+    padding: 5px;
+}
+
+.main-container {
+    background-color: var(--bgColor);
+    min-height: calc(100vh - 64px);
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    /* Vertical alignment */
+    justify-content: flex-start; /* Horizontal alignment (Left) */
+    gap: 1rem;
+
+    background-color: var(--lightDark);
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out 1s;
+}
+.searchBar:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 1s;
+}
+.searchBar .search-icon {
+    width: 20px;
+    height: 20px;
+    background-image: var(--searchIco);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.search-input {
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    font-size: 1rem;
+    font-family: inherit;
+}
+.search-input:focus {
+    outline: none;
+}
+
+.region-filter {
+    background-color: var(--lightDark);
+    padding: .7rem 1rem;
+    border-radius: 5px;
+
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 1rem;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.region-filter:focus {
+    outline: none;
+}
+
+/* Cards Section */
+
+.cardsContainer {
+    padding: 1rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    overflow-y: auto;
+}
+
+.country-card {
+    background-color: var(--lightDark);
+    width: 15rem;
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); 
+}
+
+.country-card img {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.country-card .info {
+    font-family: inherit;
+    padding: 1rem 1rem 2rem;
+
+    h3 {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--textColor);
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--textColor);
+    }
+}
+
+
+/* Country detail Section */
+.detail-container {
+    background-color: var(--bgColor);
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+}
+
+.btnBack {
+    padding: 2rem 4rem;
+}
+
+.btnBack button {
+    padding: .5rem 2rem;
+    background-color: var(--lightDark);
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--textColor);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+.btnBack button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); 
+}
+.btnBack button:active {
+    transform: translateY(0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.countryInfo-container {
+    padding: 2rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--textColor);
+    font-family: inherit;
+}
+
+.countryInfo-container img {
+    width: 25rem;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.countryInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.countryInfo h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.countryInfo h5 {
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.common-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: self-start;
+    gap: 5rem;
+
+    p {
+        margin-bottom: .5rem;
+    }
+
+    span {
+        color: var(--Dark-Gray);
+    }
+
+    .gMap {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+/* Container should have some gap between boxes */
+.borderCountry {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between the individual boxes */
+    margin-top: 10px;
+}
+
+/* The individual buttons */
+.border-btn {
+    background-color: var(--lightDark);
+    border: 1px solid var(--Dark-Gray);
+    color: var(--textColor);
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
