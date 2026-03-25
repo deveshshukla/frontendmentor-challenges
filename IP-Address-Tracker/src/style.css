@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* Overwrite the default font family */
+  --font-sans: "Rubik", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* bg image at header */
+@utility bg-header-image {
+    /* default */
+  background-image: url('/src/assets/pattern-bg-desktop.png');
+
+  /* Mobile */
+  @media (min-width: 768px) {
+    background-image: url('/src/assets/pattern-bg-mobile.png');
+  }
+
+  /* Desktop */
+  @media (min-width: 1024px) {
+    background-image: url('/src/assets/pattern-bg-desktop.png');
+  }
+}
